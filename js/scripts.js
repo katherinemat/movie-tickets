@@ -13,6 +13,7 @@
 
 //User Interface
 $(document).ready(function () {
+
   $("#lalalandTitle").click(function() {
     $("#lalalandSelect").show();
   });
@@ -25,4 +26,13 @@ $(document).ready(function () {
   $("#findDoryTitle").click(function() {
     $("#findDorySelect").show();
   });
+
+  $("#movie").submit(function(event) {
+    event.preventDefault();
+
+    var age = parseInt($("input#ageInput").val());
+    var time = parseInt($("#lalalandOpt option:selected").val()) + parseInt($("#xxxOpt option:selected").val()) + parseInt($("#dogsOpt option:selected").val()) + parseInt($("#findOpt option:selected").val());
+    console.log(time);
+
+  })
 });
