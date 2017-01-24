@@ -1,0 +1,9 @@
+#lalalandSelect, #xxxSelect, #dogsSelect, #findDorySelect {
+  display: none;
+}
+
+.movieTitle:hover {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
