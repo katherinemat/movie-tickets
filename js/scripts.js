@@ -14,17 +14,22 @@
 //User Interface
 $(document).ready(function () {
 
+  var movie = 0;
   $("#lalalandTitle").click(function() {
     $("#lalalandSelect").show();
+    movie = 2;
   });
   $("#xxxTitle").click(function() {
     $("#xxxSelect").show();
+    movie = 2;
   });
   $("#dogsTitle").click(function() {
     $("#dogsSelect").show();
+    movie = 2;
   });
   $("#findDoryTitle").click(function() {
     $("#findDorySelect").show();
+    movie = 1;
   });
 
   $("#movie").submit(function(event) {
@@ -32,7 +37,7 @@ $(document).ready(function () {
 
     var age = parseInt($("input#ageInput").val());
     var time = parseInt($("#lalalandOpt option:selected").val()) + parseInt($("#xxxOpt option:selected").val()) + parseInt($("#dogsOpt option:selected").val()) + parseInt($("#findOpt option:selected").val());
-    console.log(time);
+    console.log(movie);
 
   })
 });
